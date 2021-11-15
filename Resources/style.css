@@ -1,0 +1,400 @@
+/*Universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'PT Serif', serif;
+    height: 100%;
+}
+body {
+    background-color: #f3f3f3;
+}
+/*Header*/
+header {
+    top: 0;
+    display: flex;
+    height: 8rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2.5%;
+    position: fixed;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#house {
+    position: relative;
+    top: 2px;
+    height: 3rem;
+}
+#desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%
+}
+#desktop a {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black
+}
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    header{
+        padding: 0 5%;
+    }
+    header h1 {
+        display: none;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header {
+        height: 5rem;
+    }
+    #mobile a {
+        display: flex;
+        align-items: center;
+    }
+    .nav-buttons {
+        width: auto;
+        height: 3rem;
+    }
+}
+/*Main*/
+main {
+    margin-top: 9rem;
+}
+@media only screen and (max-width: 700px) {
+    main {
+        margin-top: 5rem;
+    }
+}
+/*Banner-Section*/
+#banner {
+    background-color: rgba(255,128,0,0.75);
+    background-image: url(./Images/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+#banner h2 {
+    font-family: 'Creepster', cursive;
+    opacity: 0.8;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+#banner p {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+/*Colour-Guide-Section*/
+#colour-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3%;
+    margin-top: 1rem;
+}
+#colour-guide h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+}
+#colour-guide p {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+}
+@media only screen and (max-width: 700px) {
+    #colour-guide {
+        margin-top: 0;
+    }
+}
+/*Colour-section*/
+#colours {
+    margin: 3%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.colour {
+    padding: 1%;
+    width: 30%;
+    background-color: white;
+}
+.colour img {
+    max-width: 100%;
+}
+.colour h3, p {
+    text-align: center;
+}
+.colour h3 {
+    margin-top: 3%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.colour p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    height: 15rem;
+    justify-content: center;
+}
+@media only screen and (max-width: 1140px) {
+    .colour p {
+        height: 20rem;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .colour p {
+        height: 25rem;
+    }
+}
+#red {
+    color: hsl(350, 100%, 50%);
+}
+#green {
+    color: hsl(130, 100%, 50%);
+}
+#blue {
+    color: hsl(220, 100%, 50%);
+}
+.colour h4 {
+    color: #9b9b9b;
+    font-size: 2rem;
+}
+.variety {
+    max-height: 9rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+.small-boxes {
+    width: 18%;
+    height: 1.5rem;
+}
+/*RED*/
+/*Lightness*/
+#RL1 {
+    background-color: hsl(350, 100%, 80%);
+}
+#RL2 {
+    background-color: hsl(350, 100%, 65%);
+}
+#RL3 {
+    background-color: hsl(350, 100%, 50%);
+}
+#RL4 {
+    background-color: hsl(350, 100%, 35%);
+}
+#RL5 {
+    background-color: hsl(350, 100%, 20%);
+}
+/*Saturation*/
+#RS1 {
+    background-color: hsl(350, 100%, 50%);
+}
+#RS2 {
+    background-color: hsl(350, 85%, 50%);
+}
+#RS3 {
+    background-color: hsl(350, 70%, 50%);
+}
+#RS4 {
+    background-color: hsl(350, 55%, 50%);
+}
+#RS5 {
+    background-color: hsl(350, 40%, 50%);
+}
+/*Hue*/
+#RH1 {
+    background-color: hsl(320, 100%, 50%);
+}
+#RH2 {
+    background-color: hsl(335, 100%, 50%);
+}
+#RH3 {
+    background-color: hsl(350, 100%, 50%);
+}
+#RH4 {
+    background-color: hsl(5, 100%, 50%);
+}
+#RH5 {
+    background-color: hsl(20, 100%, 50%);
+}
+/*GREEN*/
+/*Lightness*/
+#GL1 {
+    background-color: hsl(103, 100%, 90%);
+}
+#GL2 {
+    background-color: hsl(103, 100%, 70%);
+}
+#GL3 {
+    background-color: hsl(103, 100%, 50%);
+}
+#GL4 {
+    background-color: hsl(103, 100%, 30%);
+}
+#GL5 {
+    background-color: hsl(104, 100%, 10%);
+}
+/*Saturation*/
+#GS1 {
+    background-color: hsl(130, 100%, 50%);
+}
+#GS2 {
+    background-color: hsl(130, 80%, 50%);
+}
+#GS3 {
+    background-color: hsl(130, 60%, 50%);
+}
+#GS4 {
+    background-color: hsl(130, 40%, 50%);
+}
+#GS5 {
+    background-color: hsl(130, 20%, 50%);
+}
+/*Hue*/
+#GH1 {
+    background-color: hsl(86, 100%, 50%);
+}
+#GH2 {
+    background-color: hsl(108, 100%, 50%);
+}
+#GH3 {
+    background-color: hsl(130, 100%, 50%);
+}
+#GH4 {
+    background-color: hsl(152, 100%, 50%);
+}
+#GH5 {
+    background-color: hsl(174, 100%, 50%);
+}
+/*BLUE*/
+/*Lightness*/
+#BL1 {
+    background-color: hsl(220, 100%, 90%);
+}
+#BL2 {
+    background-color: hsl(220, 100%, 70%);
+}
+#BL3 {
+    background-color: hsl(220, 100%, 50%);
+}
+#BL4 {
+    background-color: hsl(220, 100%, 30%);
+}
+#BL5 {
+    background-color: hsl(220, 100%, 10%);
+}
+/*Saturation*/
+#BS1 {
+    background-color: hsl(220, 100%, 50%);
+}
+#BS2 {
+    background-color: hsl(220, 80%, 50%);
+}
+#BS3 {
+    background-color: hsl(220, 60%, 50%);
+}
+#BS4 {
+    background-color: hsl(220, 40%, 50%);
+}
+#BS5 {
+    background-color: hsl(220, 20%, 50%);
+}
+/*Hue*/
+#BH1 {
+    background-color: hsl(260, 100%, 50%);
+}
+#BH2 {
+    background-color: hsl(240, 100%, 50%);
+}
+#BH3 {
+    background-color: hsl(220, 100%, 50%);
+}
+#BH4 {
+    background-color: hsl(200, 100%, 50%);
+}
+#BH5 {
+    background-color: hsl(180, 100%, 50%);
+}
+@media only screen and (max-width: 700px) {
+    #colours {
+        flex-direction: column;
+    }
+    .colour {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .colour p {
+        height: 15rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .colour p {
+        height: 20rem;
+    }
+}
+/*Footer*/
+footer {
+    background-image: url(./Images/footer.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1%;
+    text-align: center;
+}
+footer p {
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+
+footer span {
+    font-size: 2.5rem;
+    background-color: rgb(255,128,0);
+    padding: 1% 2%;
+    border-radius: 1rem;
+}
